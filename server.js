@@ -11,10 +11,10 @@ fastify.get('/', async (request, reply) => {
 	return { hello: 'world' };
 });
 
-fastify.get('/preprod-landing-page', async (request, reply) => {
+fastify.get('/get-events', async (request, reply) => {
 	console.log(JSON.stringify(request.headers, null, 2));
 	const response = await axios.get(
-		'https://oneapp.preprod.tech.onefc.com/content/api/v1/events?skip=0&limit=10&type=past',
+		'https://api.tech.onefc.com/content/api/v1/events?skip=0&limit=10&type=upcoming',
 		{
 			headers: {
 				'Content-Type': 'application/json',
