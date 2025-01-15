@@ -1,0 +1,19 @@
+{
+	"name": "aws-cdn",
+	"version": "1.0.0",
+	"main": "server.js",
+	"scripts": {
+		"start": "npx nodemon --legacy-watch --inspect=0.0.0.0:9340 --ignore '*-*.json'"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@aws-sdk/client-cloudfront": "^3.726.1",
+		"@fastify/cors": "^10.0.2",
+		"axios": "^1.7.9",
+		"fastify": "^5.2.1",
+		"nodemon": "^3.1.9"
+	}
+}
